@@ -1,0 +1,27 @@
+
+    <span>{{ title }} app is running!</span>
+    <!--un css de couleur pour les paires -->
+<ol>
+  <li
+  *ngFor="let car of cars, let isEven=even"
+  [ngClass]="{pair: isEven}">
+  {{car}}
+  </li>
+</ol>
+
+<button (click)="onClick($event)">
+  ClickMe
+</button>
+
+<!--
+  
+  esto : form.maClass>p*4>label+input
+
+  es igual a esto :
+  
+  <form action="" class="maClass">
+  <p><label for=""></label><input type="text"></p>
+  <p><label for=""></label><input type="text"></p>
+  <p><label for=""></label><input type="text"></p>
+  <p><label for=""></label><input type="text"></p>
+</form> -->
